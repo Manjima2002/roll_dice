@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   AudioPlayer audioplayer = AudioPlayer();
   Future playAudio() async {
-    String audio = 'asseaudio/dice.mp3';
+    String audio = 'audio/dice.mp3';
     await audioplayer.play(AssetSource(audio));
   }
 
@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
                     playAudio();
                   },
                   child: Image.asset(
-                    "asset/images/dice-${dprovider.imagenumber}.png",
+                    "assets/images/dice-${dprovider.imagenumber}.png",
                     height: 300,
                     width: 300,
                   ),
